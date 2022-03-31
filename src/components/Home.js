@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import useFetch from "../customhooks/useFetch";
 import BlogList from "./BlogList";
 const Home = () => {
-  const { isPending, data: blogs, error } = useFetch("/blogs");
+  const { isPending, data: blogs, error } = useFetch("/blogs", "get");
 
   return (
     <div className="home">
